@@ -1,5 +1,5 @@
+import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  users: Object;
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.getUsers().subscribe(data=>{
+      this.users=data
+      console.log(this.users);
+      
+    })
+  }
+  firstClick(){
+    // this.data.getUsers().subscribe(data=>{
+    //   this.users=data
+    //   console.log(this.users);
+      
+    // })
+    console.log('Clicked');
   }
 
 }
