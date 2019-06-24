@@ -17,13 +17,5 @@ export class HomeComponent implements OnInit {
       
     })
   }
-  firstClick(){
-    // this.data.getUsers().subscribe(data=>{
-    //   this.users=data
-    //   console.log(this.users);
-      
-    // })
-    console.log('Clicked');
-  }
 
 }
