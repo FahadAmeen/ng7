@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  appTitle:string='dynamic name';
+  appTitle:string='ng7';
   
   constructor() { }
 

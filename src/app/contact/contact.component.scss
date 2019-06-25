@@ -1,3 +1,5 @@
+$color:#272727;
+
 label {
     display: block;
     
@@ -10,16 +12,17 @@ label {
 
     .errors {
         margin-top: -20px;
-        background: yellow;
+        background:lighten($color: $color, $amount: 10%);
         padding: .5em;
         display: inline-block;
         font-size: .9em;
         margin-bottom: 20px;
+        color: white
     }
 }
 
 .cta {
-    background: #7700FF;
+    background: lighten($color: $color, $amount: 10%);
     border: none;
     color: white;
 
